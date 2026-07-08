@@ -1,0 +1,7 @@
+# Extras pesados. Instale apenas se precisar desses modos.
+
+# Chunking avancado para documentos complexos.
+docling>=2.0.0
+
+# Embeddings locais sem Ollama. Baixa modelos do Hugging Face.
+sentence-transformers>=3.0.0

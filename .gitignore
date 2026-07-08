@@ -1,0 +1,72 @@
+# SOFIA - .gitignore
+
+# Ambientes Virtuais
+venv/
+.env
+.env.*
+!.env.example
+
+# Cache / Logs / Compilados
+__pycache__/
+*.py[cod]
+*.log
+*.lock
+*.lock.txt
+*.db
+*.sqlite
+.DS_Store
+Thumbs.db
+
+# Arquivos temporários do sistema operacional
+~$*
+*.swp
+*.bak
+
+# Configs e cache do Streamlit
+.streamlit/
+**/.streamlit/
+
+# Configs do VSCode ou IDEs
+.vscode/
+.idea/
+
+# Dados locais persistidos
+resources/session_cookie.json
+resources/users.json
+resources/profiles_config.json
+resources/documents.pkl
+resources/index.faiss
+resources/token_recuperacao.json
+
+# Histórico de conversas do usuário (dados sensíveis)
+resources/historico_conversas/*.json
+!resources/historico_conversas/.gitkeep
+
+# Arquivos estáticos enviados pelo cliente
+resources/assets/uploads/
+resources/assets/*.png
+!resources/assets/caporal-studio.svg
+
+# Diretórios de conteúdo externo e não versionado
+documentacao/*
+!documentacao/.gitkeep
+cache/
+exports/*
+!exports/.gitkeep
+public/*
+!public/.gitkeep
+
+# Configurações privadas do cliente
+resources/sofia_config.json
+
+# Arquivos de exportação
+*.xlsx
+*.csv
+
+# Instalações locais
+app/install/python-installer.exe
+app/install/rustup-init.exe
+
+# Backup de arquivos temporários
+*.tmp
+*.backup
